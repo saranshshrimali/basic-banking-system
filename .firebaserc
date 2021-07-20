@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "basic-banking-system-602f8": {
+      "hosting": {
+        "basic-banking-system": [
+          "basic-banking-system-602f8"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "basic-banking-system-602f8"
+  }
+}

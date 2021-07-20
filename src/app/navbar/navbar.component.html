@@ -1,0 +1,28 @@
+ <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/home"><img style="width: 120px; height: 30px;" src="../../assets/bank_logo.png" alt=""> Commercial Bank </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+     <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/viewallcustomer"> All Customer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/transferhistory">Transfer History</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="viewallcustomer">View All Customer<span class="sr-only">(current)</span></a>
+            <a class="dropdown-item" routerLink="transferhistory">Transfer History</a>
+          </div>
+        </li>
+      </ul>
+  
+    </div>  
+  </div>
+  </nav> 

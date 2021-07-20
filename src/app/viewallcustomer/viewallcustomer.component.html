@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+    <br>
+    <h3>Customer Details</h3>
+    <br>
+    <div class="table-responsive ">
+    <table class="table table-dark table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Customer ID</th>
+                <th>Customer Name</th>
+                <th>Balance</th>
+                <th>Customer Email</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let customer of customers">
+            <tr>
+                <td>{{customer.customerid}}</td>
+                <td>{{customer.name}}</td>
+                <td><span>&#8377;</span> {{customer.balance}}</td>
+                <td>{{customer.email}}</td>
+                <td>
+                    <div class="d-grid">
+                        <button class="btn btn-warning" [routerLink]="[  '/transfer', this.customer.id  ]">Transfer</button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
